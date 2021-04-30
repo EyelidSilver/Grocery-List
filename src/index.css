@@ -1,13 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 body {
+  padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(244, 244, 244);
+  background: linear-gradient(90deg, rgba(244, 244, 244, 1) 0%, rgba(239, 244, 250, 1) 100%);
+
+  font-family: 'Poppins', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0 0 0 ;
+}
+
+nav {
+    background-color:#333;
+    color: #fff;
+    height: 80px;
+    font-size: 45px;
+    padding: 20px 0 10px;
+}
+
+.cartList {
+    overflow: scroll;
+    background-color: #FCFCFC;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+    max-height: 500px;
+    box-shadow: 0px 10px 13px -7px #929292a8,
+    -25px 40px 50px 21px rgba(88, 121, 184, 0.11);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.groceryList {
+    overflow: scroll;
+    background-color: #FCFCFC;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+    max-height: 500px;
+    box-shadow: 0px 10px 13px -7px #929292a8,
+    -25px 40px 50px 21px rgba(88, 121, 184, 0.11);
+}
+
+.cartList:nth-child(odd) {
+    background-color: rgb(184, 229, 255);
+}
+
+.emptyCartText {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.input {
+    padding: 7px 7px 7px 20px;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 400;
+    border-style: none;
+    /* border: solid rgb(224, 224, 224) 3px; */
+    border-radius: 30px;
+    margin: 7px;
+    outline: none;
+    box-shadow: 0px 10px 13px -7px #929292a8,
+    -25px 10px 50px 21px rgba(88, 121, 184, 0.11);
+    transition: all 300ms ease;
+}
+
+.input:hover {
+    transform: translateY(-2px);
+}
+
+.input::placeholder {
+    font-family: 'Poppins',
+    sans-serif;
+    padding: 5px;
+    font-weight: 500;
+    color: rgb(153, 163, 179);
+}
+
+.input-submit {
+     padding: 5px 11px;
+     background-color: #fff;
+     color: #333;
+     font-size: 20px;
+     border-style: none;
+     border-radius: 40px;
+     box-shadow: 0px 10px 13px -7px #929292a8,
+     -25px 10px 50px 21px rgba(88, 121, 184, 0.11);
+     transition: 300ms ease-in-out;
+}
+
+.input-submit:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+.removeBtn {
+    padding: 10px;
+    width: 150px;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.list-item {
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    color: #333;
+    font-size: 17px;
+    border-radius: 35px;
+    box-shadow: 0px 10px 13px -7px #929292a8,
+    -25px 40px 50px 21px rgba(88, 121, 184, 0.11);
+    transition: 200ms ease-in-out;
+}
+
+.list-item:nth-child(even) {
+      background-color: #fff;
+      color: #333;
+}
+
+.list-item:hover{
+background-color: #E3F4FC;
+color: #03A7F1;
+}
+
+.inputContainer {
+    height: 60px;
+}
+
+.removeBtn {
+    width: 50px;
+    padding: 13px 0 10px 0;
+    margin: 0 0 12px 0;
+    background-color: #e43737;
+    color: #fff;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 10px 13px -7px #929292a8,
+    -25px 40px 50px 21px rgba(88, 121, 184, 0.11);
+    transition: 200ms ease-in-out;
+}
+
+.removeBtn:hover{
+     background-color: #fff;
+     color: #e43737;
+}
+
+.cartIcon {
+    font-size: 40px;
 }
